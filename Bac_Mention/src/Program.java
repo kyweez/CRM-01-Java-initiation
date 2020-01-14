@@ -17,5 +17,6 @@ public class Program
 	public static void main(String[] args) {
 		UserInterface.fcBeginProgram();
 		Message.result();
+		System.out.println("aa");
 	}
 }
