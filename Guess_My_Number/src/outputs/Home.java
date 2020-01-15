@@ -7,24 +7,26 @@ package outputs;
  * @author Kyweez
  *
  */
-public class Home
-{
-	public void fcHome(String str)
-	{
-		fcDelim(str.length() + 4);
+public class Home {
+	public void fcHome(String str) {
+		fcDelimSharp(str.length() + 4);
 		fcProgramName(str);
-		fcDelim(str.length() + 4);
+		fcDelimSharp(str.length() + 4);
 	}
-	
-	public void fcDelim(int i)
-	{
+
+	public void fcDelimSharp(int i) {
 		while (i-- > 0)
 			System.out.print("#");
 		System.out.print("\n");
 	}
-	
-	public void fcProgramName(String str)
-	{
+
+	public void fcDelimDot(int i) {
+		while (i-- > 0)
+			System.out.print("-");
+		System.out.print("\n");
+	}
+
+	public void fcProgramName(String str) {
 		System.out.println("# " + str + " #");
 	}
 }
