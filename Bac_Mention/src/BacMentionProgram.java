@@ -9,7 +9,7 @@ import outputs.UserInterface;
  * @author Kyweez
  *
  */
-public class Program
+public class BacMentionProgram
 {
 	/**
 	 * @param args
