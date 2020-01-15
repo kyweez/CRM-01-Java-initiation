@@ -23,7 +23,7 @@ public class GuessMyNumber {
 		Scanner sc = new Scanner(System.in);
 		Message out = new Message();
 		Test result = new Test();
-		byte number = 0, toFind = (byte)RandGen.randomByte(Cst.MAX_R), count = 0;
+		byte input = 0, toFind = (byte)RandGen.randomByte(Cst.MAX_R), count = 0;
 		boolean errorTest;
 		boolean finish = false;
 
@@ -35,8 +35,8 @@ public class GuessMyNumber {
 				count++;
 				out.ask(Cst.NUMBER);
 				if (sc.hasNextByte()) {
-					number = (byte)Integer.parseInt(sc.nextLine());
-					if (number >= Cst.MIN_R && number <= Cst.MAX_R)
+					input = (byte)Integer.parseInt(sc.nextLine());
+					if (input >= Cst.MIN_R && input <= Cst.MAX_R)
 						errorTest = false;
 					else
 						out.wrongValue();
@@ -45,7 +45,7 @@ public class GuessMyNumber {
 					out.wrongValue();
 				}
 			}
-			if (result.compare(number, toFind)) {
+			if (result.compare(input, toFind)) {
 				out.succes();
 				finish = true;
 			}
