@@ -10,7 +10,7 @@ public class Message {
 	}
 
 	public void succes() {
-		System.out.println("Great job !");
+		System.out.println("\nGreat job !");
 	}
 
 	public void restart() {
@@ -31,4 +31,7 @@ public class Message {
 		System.out.println("You didn't enter a value between 0 and 100...");
 	}
 
+	public void tryNumber() {
+		System.out.println("You didn't enter a value between 0 and 100...");
+	}
 }
