@@ -14,4 +14,8 @@ public class Message
 	public void errorPlayerNumber() {
 		System.out.println("You did a bad input...");
 	}
+	
+	public void	nameOfPlayer(int i) {
+		System.out.println("Enter the player " + (i+1) + " name :");
+	}
 }
