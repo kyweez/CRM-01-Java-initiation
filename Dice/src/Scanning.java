@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.Scanner;
 
 public class Scanning {
@@ -28,5 +29,31 @@ public class Scanning {
 			}
 		}
 		return (numberOfPlayers);
+	}
+//TODO Gerer le retour du scanner en n'acceptant que la touche Enter
+	public void roll(Scanner sc, Message output, Player tab[]) {
+		String readString = sc.nextLine();
+		int i, j;
+		
+		i = 0;
+		while (i < tab.length) {
+			output.askPlayer(tab[i].name);
+			j = 3;
+			while (j != 0 && readString != null) {
+				if (readString.isEmpty()) {
+					output.askRollDice();
+					
+				} 
+				if (sc.hasNextLine())
+					readString = sc.nextLine();
+				else {
+					readString = null;
+					output.errorPlayerNumber();
+				}
+				if (readString != null)
+					j--;
+			}
+			i++;
+		}
 	}
 }

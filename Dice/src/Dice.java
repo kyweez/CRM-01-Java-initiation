@@ -11,9 +11,7 @@ public class Dice {
 		Player[]	tab = new Player[numberOfPlayers];
 		
 		input.login(sc, numberOfPlayers, tab);
-		for (int i = 0; i < numberOfPlayers; i++)
-			System.out.println(tab[i].name);
-		
+		input.roll(sc, output, tab);
 		sc.close();
 	}
 
