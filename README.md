@@ -1,2 +1,2 @@
-# CRM_JAVA_00_TRAINING
-Discovering Java
+# CRM-01-Java-initiation
+Initiation au Java en programmation procedurale
